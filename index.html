@@ -76,7 +76,52 @@
   
   <main>
     <section class="promo">
-      
+      <div class="swiper-container promo__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide promo__slide">
+            <div class="wrapper promo__wrap">
+              <div class="promo__product">
+                <img src="img/images/product.png" alt="ЭФФЕКТ МОКРЫХ ВОЛОС">
+              </div>
+              <div class="promo__info">
+                <p class="promo__title">ЭФФЕКТ МОКРЫХ ВОЛОС</p>
+                <p>Созданный для профзаведений Wet Look Effect Gel стал теперь доступен для применения любителями. Для наилучшего результата придерживайтесь рекомендаций производителя.</p>
+                <a href="#" class="promo__btn">Подробнее</a>
+              </div>
+              <div class="promo__number">01</div>
+            </div>
+          </div>
+          <div class="swiper-slide promo__slide">
+            <div class="wrapper promo__wrap">
+              <div class="promo__product">
+                <img src="img/images/product.png" alt="ЭФФЕКТ МОКРЫХ ВОЛОС">
+              </div>
+              <div class="promo__info">
+                <p class="promo__title">ЭФФЕКТ МОКРЫХ ВОЛОС</p>
+                <p>Созданный для профзаведений Wet Look Effect Gel стал теперь доступен для применения любителями. Для наилучшего результата придерживайтесь рекомендаций производителя.</p>
+                <a href="#" class="promo__btn">Подробнее</a>
+              </div>
+              <div class="promo__number">02</div>
+            </div>
+          </div>
+          <div class="swiper-slide promo__slide">
+            <div class="wrapper promo__wrap">
+              <div class="promo__product">
+                <img src="img/images/product.png" alt="ЭФФЕКТ МОКРЫХ ВОЛОС">
+              </div>
+              <div class="promo__info">
+                <p class="promo__title">ЭФФЕКТ МОКРЫХ ВОЛОС</p>
+                <p>Созданный для профзаведений Wet Look Effect Gel стал теперь доступен для применения любителями. Для наилучшего результата придерживайтесь рекомендаций производителя.</p>
+                <a href="#" class="promo__btn">Подробнее</a>
+              </div>
+              <div class="promo__number">03</div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination promo__pagination"></div>
+        <div class="swiper-button-prev promo__prev"></div>
+        <div class="swiper-button-next promo__next"></div>
+      </div>
     </section>
     
     <section class="hit">
@@ -213,7 +258,7 @@
     
     <section class="about">
       <div class="wrapper">
-        <p class="title">о нас</p>
+        <p class="title title--white">о нас</p>
         <div class="about__text">
           <p>Men Stories – французский бренд профессиональной барберской косметики с 5-ти летней историей,основанный Фредерик Фита Феррандисом. Ярким отличием косметической линии Men Stories является ее состав из натуральных компонентов и приятная отдушка, прославившая французских производителей на весь мир.</p>
           <p>В представленной линии косметических средств есть уникальные позиции, которые пока еще не производит никто в мире: среди них специальный шампунь для бороды, линия антисептических средств, краска-спрей для бороды.</p>
@@ -306,6 +351,23 @@
       preventClicksPropagation: false,
       slidesPerView: 'auto',
       spaceBetween: 30,
+    });
+    
+    var mySwiper = new Swiper ('.promo__slider', {
+      pagination: {
+        el: '.promo__pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
+        },
+      },
+      navigation: {
+        nextEl: '.promo__next',
+        prevEl: '.promo__prev',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+      loop: true,
     });
   </script>
 </body>
