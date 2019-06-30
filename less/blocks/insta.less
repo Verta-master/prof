@@ -1,0 +1,42 @@
+.insta {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.insta__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 274px;
+  height: 174px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  background-color: #1A1A1A;
+  border: 2px solid #FFFFFF;
+  .transition();
+  
+  span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  
+  p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    text-align: center;
+  }
+  
+  &:hover,
+  &:active {
+    background-color: @red;
+    .transition();
+  }
+}

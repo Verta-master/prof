@@ -1,6 +1,7 @@
 .hit {
-  padding-top: 88px;
-  padding-bottom: 102px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  position: relative;
 }
 
 .hit__slide {
@@ -11,7 +12,7 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: 35px 30px;
-  padding-top: 5px;
+  padding-top: 0;
   background-color: #fff;
   border: 2px solid #F2F2F2;
   .transition();
@@ -20,6 +21,17 @@
   &:active {
     border-color: #808080;
     .transition();
+    
+    .hit__img {
+      &::before {
+        opacity: 1;
+        .transition();
+      }
+      &::after {
+        opacity: 0.75;
+        .transition();
+      }
+    }
   }
 }
 
@@ -30,13 +42,51 @@
 
 .hit__img {
   width: 100%;
+  height: 266px;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   
   img {
     display: block;
     max-height: 100%;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.5);
+    opacity: 0;
+    .transition();
+  }
+  
+  &::after {
+    content: "Посмотреть";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #fff;
+    background-color: #8E2841;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    .transition();
   }
 }
 
@@ -66,4 +116,20 @@
 .hit__btn {
   margin-left: auto;
   margin-right: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  margin-top: 0;
+  background-image: url(../img/icons/icon-next-dark.svg);
+  outline: none;
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+  left: ~"calc(50% - 620px)";
+}
+
+.swiper-button-next {
+  right: ~"calc(50% - 620px)";
 }
