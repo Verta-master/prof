@@ -1,8 +1,30 @@
 .title {
   position: relative;
+  padding-bottom: 20px;
   font-weight: 700;
   font-size: 36px;
   line-height: 53px;
   text-transform: uppercase;
   text-align: center;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 71px;
+    height: 18px;
+    background-image: url(../img/icons/icon-deco.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &--white {
+    color: #fff;
+    
+    &::after {
+      background-image: url(../img/icons/icon-deco-white.svg);
+    }
+  }
 }
