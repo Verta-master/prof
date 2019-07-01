@@ -500,7 +500,7 @@ button {
   display: block;
   font-weight: bold;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -513,7 +513,7 @@ button {
 .call__link {
   font-weight: 300;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1;
   line-height: 21px;
   color: #8E2841;
   border-bottom: 1px solid #8E2841;
@@ -543,7 +543,7 @@ button {
   position: relative;
   margin-left: 5px;
   margin-right: 5px;
-  padding-top: 30px;
+  padding-top: 35px;
   padding-bottom: 30px;
 }
 .menu__item:hover .menu__link,
@@ -597,7 +597,7 @@ button {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   text-align: center;
   letter-spacing: 0.05em;
 }
@@ -614,7 +614,7 @@ button {
 }
 .title {
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 28px;
   font-weight: 700;
   font-size: 36px;
   line-height: 53px;
@@ -672,9 +672,12 @@ button {
   transition: ease-out 0.3s;
 }
 .hit {
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 53px;
+  padding-bottom: 100px;
   position: relative;
+}
+.hit__slider {
+  margin-top: 60px;
 }
 .hit__slide {
   -webkit-box-sizing: border-box;
@@ -723,7 +726,7 @@ button {
 .hit__img {
   width: 100%;
   height: 266px;
-  padding: 10px 0;
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -783,7 +786,7 @@ button {
   transition: ease-out 0.3s;
 }
 .hit__title {
-  margin-top: 5px;
+  margin-top: 0;
   margin-bottom: 5px;
   font-weight: 500;
   font-size: 20px;
@@ -822,7 +825,7 @@ button {
 }
 .insta {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
   background-image: url(../img/images/bg-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -862,6 +865,7 @@ button {
 }
 .insta__link p {
   margin: 0;
+  margin-top: 10px;
   font-weight: 700;
   font-size: 26px;
   line-height: 39px;
@@ -874,7 +878,7 @@ button {
   transition: ease-out 0.3s;
 }
 .catalog {
-  padding-top: 60px;
+  padding-top: 55px;
   padding-bottom: 100px;
 }
 .catalog__list {
@@ -890,10 +894,11 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 34px;
+  margin-top: 60px;
 }
 .catalog__item {
   width: 570px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   background-color: #fff;
 }
 .catalog__item:hover .catalog__info p,
@@ -970,8 +975,8 @@ button {
   text-decoration: none;
 }
 .about {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   color: #fff;
   text-align: center;
   background-image: url(../img/images/bg-1.jpg);
@@ -983,6 +988,12 @@ button {
   max-width: 785px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -10px;
+  line-height: 1.75;
+}
+.about__text p {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .connect {
   padding-top: 100px;
@@ -993,14 +1004,16 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .connect__info {
+  width: 50%;
+  padding-left: 45px;
   color: #fff;
 }
 .connect__title {
@@ -1013,6 +1026,7 @@ button {
 .connect__form {
   width: 410px;
   padding: 45px 55px;
+  padding-bottom: 60px;
   background-color: #fff;
 }
 .connect__form .connect__title {
@@ -1045,6 +1059,9 @@ button {
   color: #fff;
   background-color: #1A1A1A;
 }
+.footer .call {
+  margin-bottom: 40px;
+}
 .footer__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1055,10 +1072,11 @@ button {
 }
 .footer__logo {
   padding: 20px 50px;
+  padding-top: 25px;
   background-color: #fff;
 }
 .footer__block {
-  width: 190px;
+  width: 200px;
   padding-top: 35px;
 }
 .footer__block .call__link {
@@ -1071,7 +1089,7 @@ button {
 }
 .footer__title {
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
   color: #BFBFBF;
   font-weight: 400;
   font-size: 18px;
@@ -1085,24 +1103,31 @@ button {
   letter-spacing: 0.13em;
 }
 .footer__menu li {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+}
+.footer__menu a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 .footer__menu a:hover,
 .footer__menu a:active {
-  text-decoration: underline;
+  border-color: #fff;
 }
 .footer__contacts {
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 14px;
+  line-height: 1.7;
   letter-spacing: 0.13em;
 }
 .footer__contacts span {
   display: block;
   text-transform: uppercase;
 }
+.footer__contacts a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
 .footer__contacts a:hover,
 .footer__contacts a:active {
-  text-decoration: underline;
+  border-color: #fff;
 }
 .promo {
   margin-top: 91px;
@@ -1205,6 +1230,10 @@ button {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.promo__product img {
+  display: block;
+  max-height: 100%;
+}
 .promo__info {
   width: 585px;
   display: -webkit-box;
@@ -1223,17 +1252,18 @@ button {
   color: #fff;
 }
 .promo__info p {
+  margin: 0;
   max-width: 390px;
+  line-height: 1.7;
 }
 .promo__info .promo__title {
   max-width: 100%;
+  margin-bottom: 40px;
+  line-height: 62px;
 }
 .promo__title {
-  margin-top: 0;
-  margin-bottom: 35px;
   font-weight: bold;
   font-size: 42px;
-  line-height: 62px;
   letter-spacing: 0.05em;
 }
 .promo__btn {
@@ -1248,7 +1278,7 @@ button {
           align-items: center;
   width: 180px;
   height: 40px;
-  margin-top: 85px;
+  margin-top: 90px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
