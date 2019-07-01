@@ -544,7 +544,7 @@ button {
   margin-left: 5px;
   margin-right: 5px;
   padding-top: 35px;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 }
 .menu__item:hover .menu__link,
 .menu__item:active .menu__link {
@@ -737,6 +737,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .hit__img img {
   display: block;
@@ -856,6 +857,7 @@ button {
   transition: ease-out 0.3s;
 }
 .insta__link span {
+  max-width: 100%;
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
@@ -864,6 +866,7 @@ button {
   text-transform: uppercase;
 }
 .insta__link p {
+  max-width: 100%;
   margin: 0;
   margin-top: 10px;
   font-weight: 700;
@@ -1233,6 +1236,7 @@ button {
 .promo__product img {
   display: block;
   max-height: 100%;
+  width: auto;
 }
 .promo__info {
   width: 585px;
@@ -1323,4 +1327,284 @@ button {
   line-height: 142px;
   color: #FFFFFF;
   opacity: 0.5;
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+  .menu__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/icon-menu-ham.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 19px;
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding-bottom: 70px;
+    background-color: #fff;
+    border-top: 1px solid #8E2841;
+    background-image: url(../img/icons/icon-deco.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 20px center;
+    background-size: 71px 18px;
+  }
+  .menu__item {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  .menu__item--active .menu__link {
+    border: 0;
+    color: #8E2841;
+  }
+  .menu__sublist {
+    display: block;
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    padding-bottom: 0;
+    background-image: none;
+  }
+  .header {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .menu--opened .menu__btn {
+    background-image: url(../img/icons/icon-menu-cross.svg);
+    background-size: 24px 24px;
+  }
+  .menu {
+    margin-left: auto;
+    margin-right: 50px;
+  }
+  .header__cart {
+    margin-left: 50px;
+  }
+  .promo {
+    margin-top: 0;
+  }
+  .promo__next {
+    right: 15px;
+  }
+  .promo__prev {
+    right: 75px;
+  }
+  .promo__wrap {
+    height: 600px;
+  }
+  .promo__product {
+    width: 425px;
+    margin-right: 60px;
+  }
+  .promo__info {
+    width: calc(100% - 485px);
+  }
+  .promo__slider .swiper-pagination-bullets {
+    width: 425px;
+    left: 15px;
+  }
+  .hit__slider {
+    width: 870px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hit__prev {
+    left: 10px;
+  }
+  .hit__next {
+    right: 10px;
+  }
+  .catalog__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media (max-width: 1022px) {
+  .footer__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__block {
+    width: 50%;
+  }
+  .footer__logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer__block--contacts {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer__block--nav {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .footer__block--products {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .connect__info {
+    padding-left: 0;
+  }
+  .connect__form {
+    width: 50%;
+    padding: 40px;
+  }
+  .hit__slider {
+    width: 570px;
+  }
+  .promo__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .promo__info {
+    display: block;
+    width: 100%;
+    padding-right: 120px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .promo__product {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-bottom: 40px;
+  }
+  .promo__btn {
+    margin-top: 40px;
+  }
+  .promo__slider .swiper-pagination-bullets {
+    bottom: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .connect__info,
+  .catalog__item {
+    width: 100%;
+  }
+  .catalog__img {
+    height: 300px;
+  }
+  .catalog__info {
+    padding: 20px;
+  }
+  .hit__slider {
+    width: 270px;
+  }
+  .footer__logo {
+    width: 47%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .connect__wrap {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #8E2841;
+  }
+  .connect__form {
+    width: 400px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .connect {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: none;
+  }
+  .connect__info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .footer__block {
+    width: 100%;
+  }
+  .footer__logo {
+    width: auto;
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .catalog__img {
+    height: 190px;
+  }
+  .catalog__info {
+    display: block;
+    text-align: center;
+  }
+  .catalog__btn {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .logo {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .logo svg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu {
+    margin: 0;
+  }
+  .header__cart {
+    margin: 0;
+  }
+  .promo__info {
+    padding-right: 0;
+  }
+  .promo__info .promo__title {
+    padding-right: 90px;
+    font-size: 36px;
+    line-height: 1.3;
+  }
+  .promo__product {
+    display: block;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  .promo__product::after {
+    right: 0;
+    top: 0;
+  }
+  .promo__slider .swiper-pagination-bullets {
+    width: 100%;
+    left: 0;
+    bottom: 70px;
+  }
+  .promo__prev {
+    left: 35%;
+    right: auto;
+    bottom: 10px;
+  }
+  .promo__next {
+    right: 35%;
+    bottom: 10px;
+  }
 }
