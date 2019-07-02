@@ -87,25 +87,46 @@
         <div class="card__wrap">
           <div class="card__block">
             <div class="card__slider">
-              <div class="card__thumbs">
-                <a href="#" class="swiper-slide card__thumb card__thumb--active">
-                  <img src="img/images/photo.jpg" alt="Сыворотка">
-                </a>
-                <a href="#" class="swiper-slide card__thumb">
-                  <img src="img/images/photo-2.jpg" alt="Сыворотка">
-                </a>
-                <a href="#" class="swiper-slide card__thumb">
-                  <img src="img/images/photo-3.jpg" alt="Сыворотка">
-                </a>
-                <a href="#" class="swiper-slide card__thumb">
-                  <img src="img/images/product.png" alt="Сыворотка">
-                </a>
+              <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__thumb">
+                    <img src="img/images/photo.jpg" alt="Сыворотка">
+                  </div>
+                  <div class="swiper-slide card__thumb">
+                    <img src="img/images/photo-2.jpg" alt="Сыворотка">
+                  </div>
+                  <div class="swiper-slide card__thumb">
+                    <img src="img/images/photo-3.jpg" alt="Сыворотка">
+                  </div>
+                  <div class="swiper-slide card__thumb">
+                    <img src="img/images/product.png" alt="Сыворотка">
+                  </div>
+                  <div class="swiper-slide card__thumb">
+                    <img src="img/images/photo.jpg" alt="Сыворотка">
+                  </div>
+                </div>
               </div>
-              <div class="card__view">
-                <a href="#" class="card__img">
-                  <img src="img/images/photo-big.jpg" alt="Сыворотка">
-                </a>
+              <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card__slide">
+                    <img src="img/images/photo-big.jpg" alt="Сыворотка">
+                  </div>
+                  <div class="swiper-slide card__slide">
+                    <img src="img/images/photo-2.jpg" alt="Сыворотка">
+                  </div>
+                  <div class="swiper-slide card__slide">
+                    <img src="img/images/photo-3.jpg" alt="Сыворотка">
+                  </div>
+                  <div class="swiper-slide card__slide">
+                    <img src="img/images/product.png" alt="Сыворотка">
+                  </div>
+                  <div class="swiper-slide card__slide">
+                    <img src="img/images/photo-big.jpg" alt="Сыворотка">
+                  </div>
+                </div>
               </div>
+              <div class="swiper-button-prev card__prev"></div>
+              <div class="swiper-button-next card__next"></div>
             </div>
 
             <div class="card__info">
@@ -269,6 +290,29 @@
       preventClicksPropagation: false,
       slidesPerView: 'auto',
       spaceBetween: 30,
+    });
+    
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      direction: 'vertical',
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      breakpoints: 
+				{
+					480: 
+					{
+            direction: 'horizontal',
+					},
+        }
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      navigation: {
+        nextEl: '.card__next',
+        prevEl: '.card__prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      }
     });
   </script>
 </body>
