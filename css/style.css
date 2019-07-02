@@ -1653,7 +1653,9 @@ span.breadcrumbs__link {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  text-align: center;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .basket__name {
   width: 430px;
@@ -1706,10 +1708,13 @@ a.basket__title:active {
   font-size: 36px;
   color: #8E2841;
 }
+.basket__form {
+  width: 730px;
+}
 .basket__field {
   margin: 0;
   padding: 0;
-  width: 729px;
+  width: 100%;
   margin-bottom: 30px;
   padding: 20px 115px;
   background: #FFFFFF;
@@ -1731,6 +1736,7 @@ a.basket__title:active {
   display: block;
   width: 410px;
   padding: 35px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
   background-color: #fff;
 }
@@ -1761,8 +1767,10 @@ a.basket__title:active {
   line-height: 71px;
 }
 .basket__btn {
-  width: 100%;
+  width: 730px;
   height: 50px;
+  max-width: 100%;
+  margin-bottom: 30px;
   font-size: 18px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1875,6 +1883,18 @@ a.basket__title:active {
   .card__info {
     padding-right: 30px;
   }
+  .basket__total {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  .basket__table,
+  .basket__form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
 }
 @media (max-width: 1022px) {
   .footer__wrap {
@@ -1953,6 +1973,18 @@ a.basket__title:active {
   .card__info {
     width: 100%;
     padding-left: 30px;
+  }
+}
+@media (max-width: 766px) {
+  .basket__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .basket__name {
+    width: 100%;
+  }
+  .basket__field {
+    padding: 20px 30px;
   }
 }
 @media (max-width: 600px) {
@@ -2116,5 +2148,20 @@ a.basket__title:active {
     right: 0;
     left: auto;
     bottom: 25px;
+  }
+  .basket__table-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .basket__remove {
+    margin-bottom: 30px;
+  }
+  .basket__total {
+    padding: 20px;
   }
 }
