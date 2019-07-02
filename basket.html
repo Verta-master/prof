@@ -6,7 +6,6 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Title</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -77,147 +76,112 @@
   <main>
     <nav class="breadcrumbs wrapper">
       <a href="#" class="breadcrumbs__link">Главная</a>
-      <a href="#" class="breadcrumbs__link">Каталог</a>
-      <a href="#" class="breadcrumbs__link">Уход за бородой</a>
-      <span class="breadcrumbs__link">Сыворотка для бороды Barber serum 30мл</span>
+      <span class="breadcrumbs__link">Корзина</span>
     </nav>
     
-    <section class="card">
+    <section class="basket">
       <div class="wrapper">
-        <div class="card__wrap">
-          <div class="card__block">
-            <div class="card__slider">
-              <div class="swiper-container gallery-thumbs">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide card__thumb">
-                    <img src="img/images/photo.jpg" alt="Сыворотка">
-                  </div>
-                  <div class="swiper-slide card__thumb">
-                    <img src="img/images/photo-2.jpg" alt="Сыворотка">
-                  </div>
-                  <div class="swiper-slide card__thumb">
-                    <img src="img/images/photo-3.jpg" alt="Сыворотка">
-                  </div>
-                  <div class="swiper-slide card__thumb">
-                    <img src="img/images/product.png" alt="Сыворотка">
-                  </div>
-                  <div class="swiper-slide card__thumb">
-                    <img src="img/images/photo.jpg" alt="Сыворотка">
-                  </div>
-                </div>
+        <div class="basket__wrap">
+          <h1 class="title title-h1">Оформление заказа</h1>
+          <div class="basket__table">
+            <div class="basket__table-line">
+              <div class="basket__img">
+                <img src="img/images/photo.jpg" alt="Сыворотка для бороды Barber serum 30мл">
               </div>
-              <div class="swiper-container gallery-top">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide card__slide">
-                    <img src="img/images/photo-big.jpg" alt="Сыворотка">
-                  </div>
-                  <div class="swiper-slide card__slide">
-                    <img src="img/images/photo-2.jpg" alt="Сыворотка">
-                  </div>
-                  <div class="swiper-slide card__slide">
-                    <img src="img/images/photo-3.jpg" alt="Сыворотка">
-                  </div>
-                  <div class="swiper-slide card__slide">
-                    <img src="img/images/product.png" alt="Сыворотка">
-                  </div>
-                  <div class="swiper-slide card__slide">
-                    <img src="img/images/photo-big.jpg" alt="Сыворотка">
-                  </div>
-                </div>
+              <div class="basket__name">
+                <a href="#" class="basket__title">Сыворотка для бороды Barber serum 30мл</a>
+                <div class="basket__price">1400р.</div>
               </div>
-              <div class="swiper-button-prev card__prev"></div>
-              <div class="swiper-button-next card__next"></div>
+              <a href="#" class="basket__remove">
+                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="18.4248" y="0.246948" width="4" height="25" transform="rotate(45 18.4248 0.246948)"/>
+                  <rect x="0.74707" y="3.07538" width="4" height="25" transform="rotate(-45 0.74707 3.07538)"/>
+                </svg>
+              </a>
+              <div class="card__number">
+                <button type="button" class="card__more card__more--minus">-</button>
+                <input type="text" class="card__value" value="2">
+                <button type="button" class="card__more card__more--plus">+</button>
+              </div>
+              <div class="basket__price-total">2800р.</div>
             </div>
+            <div class="basket__table-line">
+              <div class="basket__img">
+                <img src="img/images/photo-2.jpg" alt="Сыворотка для бороды Barber serum 30мл">
+              </div>
+              <div class="basket__name">
+                <a href="#" class="basket__title">Сыворотка для бороды Barber serum 30мл</a>
+                <div class="basket__price">1400р.</div>
+              </div>
+              <a href="#" class="basket__remove">
+                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="18.4248" y="0.246948" width="4" height="25" transform="rotate(45 18.4248 0.246948)"/>
+                  <rect x="0.74707" y="3.07538" width="4" height="25" transform="rotate(-45 0.74707 3.07538)"/>
+                </svg>
+              </a>
+              <div class="card__number">
+                <button type="button" class="card__more card__more--minus">-</button>
+                <input type="text" class="card__value" value="2">
+                <button type="button" class="card__more card__more--plus">+</button>
+              </div>
+              <div class="basket__price-total">2800р.</div>
+            </div>
+          </div>
 
-            <div class="card__info">
-              <h1 class="title-h1">Сыворотка для бороды Barber serum 30мл</h1>
-              <p>Для кого: рекомендуется для волос любого типа, дает волосам хорошую пластичность и контроль, укладывай как хочешь, позволяет визуально увеличить массу волос, подходит для укладок с матовой поверхностью и для создания ирокеза, матовая мастика Ruck Matte Putty придает волосам небольшой объем.</p>
-              <form action="#" class="card__form">
-                <div class="card__number">
-                  <button type="button" class="card__more card__more--minus">-</button>
-                  <input type="text" class="card__value" value="1">
-                  <button type="button" class="card__more card__more--plus">+</button>
-                </div>
-                <div class="card__btns">
-                  <p class="card__price">1400р.</p>
-                  <a href="#" class="btn card__btn">В корзину</a>
-                </div>
-              </form>
-            </div>
-          </div>
+          <form action="#" class="basket__form">
+            <fieldset class="basket__field">
+              <p class="basket__title">Укажите свои данные для оформления заказа</p>
+              <label for="name" class="form__star">
+                <input type="text" id="name" class="form__input" placeholder="Как вас зовут?">
+              </label>
+              <label for="tel" class="form__star">
+                <input type="tel" id="tel" class="form__input" placeholder="Укажите Ваш контактный телефон">
+              </label>
+              <label for="email" class="form__star">
+                <input type="email" id="email" class="form__input" placeholder="Укажите Ваш контактный e-mail">
+              </label>
+              <p class="form__comment">* обязательные поля ввода</p>
+            </fieldset>
+            <fieldset class="basket__field">
+              <p class="basket__title">Выберите способ получения заказа, который вам подходит</p>
+              <input type="radio" name="radio" id="ems" class="form__radio" checked>
+              <label for="ems" class="form__label">Доставка EMS Почта России<span>Стоимость доставки 350 руб.</span></label>
+              <input type="radio" name="radio" id="curier" class="form__radio">
+              <label for="curier" class="form__label">Доставка курьером по Москве<span>Стоимость доставки 200 руб.</span></label>
+              <input type="radio" name="radio" id="curier2" class="form__radio">
+              <label for="curier2" class="form__label">Доставка курьером по Московской области<span>до 30 км от МКАД. Стоимость доставки 300 руб.</span></label>
+              <input type="radio" name="radio" id="free" class="form__radio">
+              <label for="free" class="form__label">Самовывоз<span>Бесплатно</span></label>
+            </fieldset>
+            <fieldset class="basket__field">
+              <p class="basket__title">Выберите удобный способ оплаты вашего заказа</p>
+              <input type="radio" name="radio2" id="option1" class="form__radio">
+              <label for="option1" class="form__label">Наличными или банковской картой при получении</label>
+              <input type="radio" name="radio2" id="option2" class="form__radio" checked>
+              <label for="option2" class="form__label">Банковской картой (онлайн)</label>
+              <input type="radio" name="radio2" id="option3" class="form__radio">
+              <label for="option3" class="form__label">Яндекс деньги</label>
+              <input type="radio" name="radio2" id="option4" class="form__radio">
+              <label for="option4" class="form__label">WebMoney </label>
+            </fieldset>
+
+            <aside class="basket__total">
+              <div class="basket__line">
+                <span>Товаров на:</span>
+                <p>5600р.</p>
+              </div>
+              <div class="basket__line">
+                <span>Доставка</span>
+                <p>350р.</p>
+              </div>
+              <div class="basket__line basket__line--price">
+                <p class="basket__title">Итого</p>
+                <p class="basket__sum">5950р.</p>
+              </div>
+              <button type="submit" class="btn basket__btn">Подтвердить заказ</button>
+            </aside>
+          </form>
         </div>
-      </div>
-    </section>
-    
-    <section class="hit">
-      <div class="wrapper hit__wrap">
-        <p class="title">С этим товаром покупают</p>
-        <div class="swiper-container hit__slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide hit__slide">
-              <a href="#" class="hit__link">
-                <figure class="hit__img">
-                  <img src="img/images/photo.jpg" alt="Сыворотка для бороды Barber serum 30мл">
-                </figure>
-                <p class="hit__title">Сыворотка для бороды Barber serum 30мл</p>
-              </a>
-              <div class="hit__info">
-                <p class="hit__price">1400р.</p>
-                <a href="#" class="btn hit__btn">В корзину</a>
-              </div>
-            </div>
-            <div class="swiper-slide hit__slide">
-              <a href="#" class="hit__link">
-                <figure class="hit__img">
-                  <img src="img/images/photo.jpg" alt="Сыворотка для бороды Barber serum 30мл">
-                </figure>
-                <p class="hit__title">Сыворотка для бороды Barber serum 30мл</p>
-              </a>
-              <div class="hit__info">
-                <p class="hit__price">1400р.</p>
-                <a href="#" class="btn hit__btn">В корзину</a>
-              </div>
-            </div>
-            <div class="swiper-slide hit__slide">
-              <a href="#" class="hit__link">
-                <figure class="hit__img">
-                  <img src="img/images/photo.jpg" alt="Сыворотка для бороды Barber serum 30мл">
-                </figure>
-                <p class="hit__title">Сыворотка для бороды Barber serum 30мл</p>
-              </a>
-              <div class="hit__info">
-                <p class="hit__price">1400р.</p>
-                <a href="#" class="btn hit__btn">В корзину</a>
-              </div>
-            </div>
-            <div class="swiper-slide hit__slide">
-              <a href="#" class="hit__link">
-                <figure class="hit__img">
-                  <img src="img/images/photo.jpg" alt="Сыворотка для бороды Barber serum 30мл">
-                </figure>
-                <p class="hit__title">Сыворотка для бороды Barber serum 30мл</p>
-              </a>
-              <div class="hit__info">
-                <p class="hit__price">1400р.</p>
-                <a href="#" class="btn hit__btn">В корзину</a>
-              </div>
-            </div>
-            <div class="swiper-slide hit__slide">
-              <a href="#" class="hit__link">
-                <figure class="hit__img">
-                  <img src="img/images/photo.jpg" alt="Сыворотка для бороды Barber serum 30мл">
-                </figure>
-                <p class="hit__title">Сыворотка для бороды Barber serum 30мл</p>
-              </a>
-              <div class="hit__info">
-                <p class="hit__price">1400р.</p>
-                <a href="#" class="btn hit__btn">В корзину</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-prev hit__prev"></div>
-        <div class="swiper-button-next hit__next"></div>
       </div>
     </section>
   </main>
@@ -277,45 +241,14 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-
-  <!-- Sliders -->
+  
   <script>
-    var mySwiper = new Swiper ('.hit__slider', {
-      navigation: {
-        nextEl: '.hit__next',
-        prevEl: '.hit__prev',
-      },
-      preventClicks: false,
-      preventClicksPropagation: false,
-      slidesPerView: 'auto',
-      spaceBetween: 30,
-    });
-    
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-      direction: 'vertical',
-      freeMode: true,
-      slidesPerView: 'auto',
-      loop: true,
-      loopedSlides: 1,
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-      breakpoints: 
-				{
-					480: 
-					{
-            direction: 'horizontal',
-					},
-        }
-    });
-    var galleryTop = new Swiper('.gallery-top', {
-      navigation: {
-        nextEl: '.card__next',
-        prevEl: '.card__prev',
-      },
-      thumbs: {
-        swiper: galleryThumbs,
-      },
+    $(window).scroll(function() {
+      if($(this).scrollTop() >= 250){
+        $('.basket__total').css('top', '120px');
+      } else {
+        $('.basket__total').css('top', '365px');
+      }
     });
   </script>
 </body>

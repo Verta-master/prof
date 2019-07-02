@@ -26,6 +26,7 @@
 .card__number {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   width: 131px;
   margin-top: 50px;
   border: 2px solid #808080;
@@ -37,6 +38,13 @@
   height: 40px;
   font-size: 30px;
   line-height: 40px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+  }
 }
 
 .card__value {
