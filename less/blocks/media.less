@@ -160,24 +160,11 @@
   }
   .card__slider {
     width: 100%;
-    padding-top: 30px;
-    padding-right: 30px;
-    flex-direction: column-reverse;
-    align-items: center;
+    padding-left: 20px;
   }
   .card__info {
     width: 100%;
     padding-left: 30px;
-  }
-  .card__thumbs {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .card__thumb {
-    width: 25%;
-    height: auto;
   }
 }
 
@@ -221,6 +208,10 @@
   .connect__info {
     text-align: center;
     margin-bottom: 20px;
+  }
+  .card__prev,
+  .card__next {
+    left: 50px;
   }
 }
 
@@ -303,5 +294,37 @@
   .card__btn {
     width: 100%;
     margin-top: 20px;
+  }
+  .card__slider {
+    height: 450px;
+    padding: 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .gallery-thumbs {
+    width: 100%;
+    margin: 0 40px;
+  }
+  .gallery-top {
+    width: 100%;
+  }
+  .gallery-thumbs .swiper-slide {
+    width: 25% !important;
+    height: auto !important;
+  }
+  .card__slide {
+    height: auto;
+  }
+  .card__prev {
+    transform: rotate(180deg);
+    left: 0;
+    bottom: 25px;
+    top: auto;
+  }
+  .card__next {
+    transform: none;
+    right: 0;
+    left: auto;
+    bottom: 25px;
   }
 }
